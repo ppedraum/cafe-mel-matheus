@@ -1,0 +1,31 @@
+.alerta {
+    position: fixed;
+    width: 250px;
+    padding: 1rem 2rem;
+    z-index: 103;
+    text-align: left;
+    color: var(--bg);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.06);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    top: 20%;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+    transform: translateX(-4rem);
+  }
+  
+  .alertShown {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .alerta.ok {
+    background: rgb(235, 172, 0);
+  }
+  
+  .alerta.bad {
+    background: rgb(243, 160, 149);
+  }

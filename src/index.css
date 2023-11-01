@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+  --texto-1: #b16005;
+  --texto-2: rgba(250, 152, 16, 0.5);
+  --borda: rgba(247, 188, 26, 0.2);
+  --bg: #fbfcf3;
+  --sec: #f0c88b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0
+}
+
+input,
+button,
+textarea {
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  color: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  color: var(--texto-1);
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  background: var(--bg);
+}
+
+.container {
+  max-width: 1150px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.btn-style {
+  padding: .6rem 1.1rem;
+  background: var(--texto-1);
+  border-radius: .2rem;
+  color: var(--bg);
+  font-size: .9rem;
+  transition: .2s;
+  border: 2px solid transparent
+}
+
+.btn-style:hover {
+  background: var(--sec);
+  color: var(--texto-1);
+  border: 2px solid var(--texto-1)
+}
+
+main {
+  min-height: calc(100vh - 4rem);
+  /*4rem do footer*/
+  padding-top: 7.5rem;
+  padding-bottom: 3rem;
+  position: relative;
+}
+h1 {
+  font-size: 3rem;
+}
+
+h1::after,
+h2::after {
+  content: '';
+ 
+  background-size: 3rem;
+  width: 3rem;
+  height: .6rem;
+  position: relative;
+  display: block;
+}
+
+@media (max-width: 450px) {
+  body {
+    font-size: 14px;
+  }
+
+  .btn-style {
+    padding: .5rem 1rem;
+  }
+}

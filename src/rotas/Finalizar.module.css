@@ -1,0 +1,21 @@
+.finalizar h1 {
+    font-size: 2rem;
+  }
+  
+  .cidade {
+    margin: 1rem 0 3rem 0;
+  }
+  
+  .finalizar {
+    display: flex;
+  }
+  
+  .formField {
+    flex: 2
+  }
+  
+  @media (max-width: 850px) {
+    .finalizar {
+      flex-direction: column;
+    }
+  }
