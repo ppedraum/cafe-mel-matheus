@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/cafe-mel/static/css/main.3e6e71d8.css",
+    "main.js": "/cafe-mel/static/js/main.cfe7a4db.js",
+    "static/media/beb5.webp": "/cafe-mel/static/media/beb5.be5fac8fefad82a55135.webp",
+    "static/media/imghome.webp": "/cafe-mel/static/media/imghome.990395850c10fe4d79c3.webp",
+    "static/media/pstel.webp": "/cafe-mel/static/media/pstel.1f090f2b7fc78ee17ec7.webp",
+    "static/media/imghome3.webp": "/cafe-mel/static/media/imghome3.2d3ed2667008d1b39c36.webp",
+    "static/media/pstdc.webp": "/cafe-mel/static/media/pstdc.2ba62d9a584ed87cbb32.webp",
+    "static/media/imghome2.webp": "/cafe-mel/static/media/imghome2.fc9fc4e60190b24cf891.webp",
+    "static/media/miniemp.webp": "/cafe-mel/static/media/miniemp.1fcc17bed80bb530245a.webp",
+    "static/media/bolo2.webp": "/cafe-mel/static/media/bolo2.08b0ad23ad3da539c259.webp",
+    "static/media/empd1.webp": "/cafe-mel/static/media/empd1.bdf39ddc6f21366644db.webp",
+    "static/media/beb1.webp": "/cafe-mel/static/media/beb1.3f14f660e1444e50db45.webp",
+    "static/media/ftiaemp1.webp": "/cafe-mel/static/media/ftiaemp1.5e87dd44f1b732840cfa.webp",
+    "static/media/bolo1.webp": "/cafe-mel/static/media/bolo1.43a82ebfd56d9f334bb4.webp",
+    "static/media/bolo4.webp": "/cafe-mel/static/media/bolo4.6f1c8ef8d575c6546b31.webp",
+    "static/media/brig.webp": "/cafe-mel/static/media/brig.a5d4ec131a86957a8f38.webp",
+    "static/media/cup.webp": "/cafe-mel/static/media/cup.8a4f3f11879b3cc8f8c0.webp",
+    "static/media/beb4.webp": "/cafe-mel/static/media/beb4.0d6cc64e5e76e1077404.webp",
+    "static/media/bolo3.webp": "/cafe-mel/static/media/bolo3.c8c5e23dc3daf78312dc.webp",
+    "static/media/bp1.webp": "/cafe-mel/static/media/bp1.9141a8b2cb15a15572ce.webp",
+    "static/media/doce.webp": "/cafe-mel/static/media/doce.fc4ebb80a73f023dd4f8.webp",
+    "static/media/beb3.webp": "/cafe-mel/static/media/beb3.d7231d826a9a755e25a8.webp",
+    "static/media/bp2.webp": "/cafe-mel/static/media/bp2.63833b814bbea21323cf.webp",
+    "static/media/beb2.webp": "/cafe-mel/static/media/beb2.9357e2554640f1d7d20a.webp",
+    "index.html": "/cafe-mel/index.html",
+    "static/media/cart.svg": "/cafe-mel/static/media/cart.6828a7e1ac9fbafbef6699e2cc2fc37a.svg",
+    "static/media/logo.svg": "/cafe-mel/static/media/logo.f13fab7d518e58d03c25d714fbf9b879.svg",
+    "static/media/menu.svg": "/cafe-mel/static/media/menu.f98b98b4905b36b844a65327ecaadc32.svg",
+    "static/media/close.svg": "/cafe-mel/static/media/close.85f9f2a1f603d5a966a44474678a7981.svg",
+    "static/media/cafe-meli.code-workspace": "/cafe-mel/static/media/cafe-meli.980c7de21d8a35b987c4.code-workspace",
+    "main.3e6e71d8.css.map": "/cafe-mel/static/css/main.3e6e71d8.css.map",
+    "main.cfe7a4db.js.map": "/cafe-mel/static/js/main.cfe7a4db.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3e6e71d8.css",
+    "static/js/main.cfe7a4db.js"
+  ]
+}
