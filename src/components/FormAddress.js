@@ -77,20 +77,40 @@ const FormAddress = ({ compraFinalizada }) => {
   const submitForm = (e) => {
     e.preventDefault();
 
-    setCepWasTouched(true);
-    setStreetWasTouched(true);
-    setComplementoWasTouched(true);
-    setNeighborhoodWasTouched(true);
-    setNomeWasTouched(true);
-    setCpfWasTouched(true);
-    setNumWasTouched(true);
+    fetch('http://localhost/enviarCarrinho.php',{
+      method: 'POST',
+      headers: {
+        'Content-Type' : 'application/json'
+      },
+      body: JSON.stringify({
+        nome: nome,
+        cpf: cpf,
+        cep: cep,
+        rua: street,
+        endereco: neighborhood,
+        numero: num,
+        complemento: complemento,
+        formaPgto: 'pix'
+      }),
+    })
+    .then(data => data.json())
+    .then(data => console.log(data));
 
-    if (cepIsValid && streetIsValid && complementoIsValid && neighborhoodIsValid && nomeIsValid && cpfIsValid && numIsValid) {
-      compraFinalizada()
-      navigate('/finalizado', { state: { nome, cartState } })
-    } else { 
-      dispatch(alertVisibility('Preencha o formulário corretamente.', 'bad'));
-    }
+    // setCepWasTouched(true);
+    // setStreetWasTouched(true);
+    // setComplementoWasTouched(true);
+    // setNeighborhoodWasTouched(true);
+    // setNomeWasTouched(true);
+    // setCpfWasTouched(true);
+    // setNumWasTouched(true);
+
+    // if (cepIsValid && streetIsValid && complementoIsValid && neighborhoodIsValid && nomeIsValid && cpfIsValid && numIsValid) {
+    //   compraFinalizada()
+    //   // fetch para o servidor
+    //   navigate('/finalizado', { state: { nome, cartState } })
+    // } else { 
+    //   dispatch(alertVisibility('Preencha o formulário corretamente.', 'bad'));
+    // }
   }
 
   return (
