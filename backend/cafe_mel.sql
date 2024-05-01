@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 29, 2024 at 01:16 AM
+-- Generation Time: May 02, 2024 at 01:02 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -41,7 +41,11 @@ CREATE TABLE `pedido` (
 INSERT INTO `pedido` (`id`, `id_usuario`, `total`, `forma_pgto`) VALUES
 (1, 5, NULL, 'pix'),
 (2, 7, 0.00, 'pix'),
-(3, 8, 0.00, 'pix');
+(3, 8, 0.00, 'pix'),
+(4, 12, 60.00, 'pix'),
+(5, 13, 60.00, 'pix'),
+(6, 14, 60.00, 'pix'),
+(7, 15, 200.00, 'pix');
 
 -- --------------------------------------------------------
 
@@ -55,6 +59,15 @@ CREATE TABLE `pedido_item` (
   `id_pedido` int(11) NOT NULL,
   `quantidade` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Dumping data for table `pedido_item`
+--
+
+INSERT INTO `pedido_item` (`id`, `id_produto`, `id_pedido`, `quantidade`) VALUES
+(1, 1, 6, 1),
+(2, 1, 7, 2),
+(3, 2, 7, 1);
 
 -- --------------------------------------------------------
 
@@ -105,7 +118,14 @@ INSERT INTO `usuario` (`id`, `nome`, `cpf`, `cep`, `rua`, `endereco`, `numero`, 
 (5, 'Teste', '1', '', '1', '1', '1', '1'),
 (6, 'Teste', '1', '', '1', '1', '1', '1'),
 (7, 'Teste', '1', '', '1', '1', '1', '1'),
-(8, 'Teste', '1', '', '1', '1', '1', '1');
+(8, 'Teste', '1', '', '1', '1', '1', '1'),
+(9, '1', '1', '', '1', '1', '1', '1'),
+(10, '1', '1', '', '1', '1', '1', '1'),
+(11, '1', '1', '', '1', '1', '1', '1'),
+(12, '1', '1', '', '1', '1', '1', '1'),
+(13, '1', '1', '', '1', '1', '1', '1'),
+(14, '1', '1', '', '1', '1', '1', '1'),
+(15, 'Pedro', '257.881.200-47', '', 'Avenida Getúlio Vargas - de 867 a 1233 - lado ímpar', 'Urussanguinha', '111', '111');
 
 --
 -- Indexes for dumped tables
@@ -146,13 +166,13 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT for table `pedido`
 --
 ALTER TABLE `pedido`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `pedido_item`
 --
 ALTER TABLE `pedido_item`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `produto`
@@ -164,7 +184,7 @@ ALTER TABLE `produto`
 -- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- Constraints for dumped tables
