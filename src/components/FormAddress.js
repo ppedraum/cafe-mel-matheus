@@ -74,46 +74,6 @@ const FormAddress = ({ compraFinalizada }) => {
     }
   }, [cep, cepTouched, setNeighborhood, setStreet])
 
-
-  // const submitForm = (e) => {
-  //   e.preventDefault();
-
-  //   fetch('http://localhost/enviarCarrinho.php',{
-  //     method: 'POST',
-  //     headers: {
-  //       'Content-Type' : 'application/json'
-  //     },
-  //     body: JSON.stringify({
-  //       nome: nome,
-  //       cpf: cpf,
-  //       cep: cep,
-  //       rua: street,
-  //       endereco: neighborhood,
-  //       numero: num,
-  //       complemento: complemento,
-  //       formaPgto: 'pix'
-  //     }),
-  //   })
-  //   .then(data => data.json())
-  //   .then(data => console.log(data));
-
-  //   // setCepWasTouched(true);
-  //   // setStreetWasTouched(true);
-  //   // setComplementoWasTouched(true);
-  //   // setNeighborhoodWasTouched(true);
-  //   // setNomeWasTouched(true);
-  //   // setCpfWasTouched(true);
-  //   // setNumWasTouched(true);
-
-  //   // if (cepIsValid && streetIsValid && complementoIsValid && neighborhoodIsValid && nomeIsValid && cpfIsValid && numIsValid) {
-  //   //   compraFinalizada()
-  //   //   // fetch para o servidor
-  //   //   navigate('/finalizado', { state: { nome, cartState } })
-  //   // } else { 
-  //   //   dispatch(alertVisibility('Preencha o formulário corretamente.', 'bad'));
-  //   // }
-  // }
-
 const submitForm = async (e) => {
     e.preventDefault();
     setCepWasTouched(true);
@@ -126,7 +86,7 @@ const submitForm = async (e) => {
 
     console.log(cartState);
 
-    if (cepIsValid && streetIsValid && complementoIsValid && neighborhoodIsValid && nomeIsValid && cpfIsValid && numIsValid) {
+    // if (cepIsValid && streetIsValid && complementoIsValid && neighborhoodIsValid && nomeIsValid && cpfIsValid && numIsValid) {
       try {
         const response = await fetch('http://localhost/enviarCarrinho.php', {
           method: 'POST',
@@ -154,9 +114,9 @@ const submitForm = async (e) => {
       } catch (error) {
         dispatch(alertVisibility('Ocorreu um erro ao se conectar ao servidor. Tente novamente mais tarde.', 'bad'));
       }
-    } else {
-      dispatch(alertVisibility('Preencha o formulário corretamente.', 'bad'));
-    }
+    // } else {
+    //   dispatch(alertVisibility('Preencha o formulário corretamente.', 'bad'));
+    // }
   };
 
   return (
